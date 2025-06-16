@@ -1,0 +1,4 @@
+conda create -f #blah python=3.10 #packages
+conda create -p #home/blah
+Largest directories: du -h . |sort -h|tail -10
+Largest files: find . -type f -size +8192 -exec du -h {} \; | sort -h | tail

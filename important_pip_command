@@ -1,0 +1,3 @@
+pip install #packages
+pip install pytorch3d -f #whl
+pip cache purge

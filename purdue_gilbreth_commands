@@ -1,0 +1,7 @@
+sinteractive -A standby -N2 -n32 --gpus-per-node=1 --constraint=K --time=04:00:00
+
+sbatch -A bera89-k --gpus-per-node=1 --constraint=K --time=6-00:00:00 /depot/bera89/data/zhan5058/MeshDiffusion/kernel_field/testSlurm.sub
+#!/bin/sh -l
+
+squeue -u zhan5058
+scancel #jobid
