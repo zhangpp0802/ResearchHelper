@@ -1,5 +1,6 @@
 sacctmgr show assoc user=$USER → shows which QoS you personally can use with your account
 sacctmgr show qos format=Name,MaxWall,MaxJobs,MaxSubmitJobs,Priority → shows which QoS info
+sinfo -s → shows partition infos
 // sinteractive -A standby -N2 -n32 --gpus-per-node=1 --constraint=K --time=04:00:00
 sbatch -A bera89 -N1 -n1 --cpus-per-task=32 --gpus-per-node=1 -p a100-80gb -q standby --mem=80G --time=7-00:00:00 /XXX.sub
 sbatch -A bera89 -N1 -n1 --cpus-per-task=32 --gpus-per-node=1 -p a100-80gb --constraint=K --mem=80G --time=7-00:00:00 /XXX.sub
