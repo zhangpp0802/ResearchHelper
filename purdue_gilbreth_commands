@@ -6,6 +6,7 @@ sbatch -A bera89 -N1 -n1 --cpus-per-task=32 --gpus-per-node=1 -p a100-80gb -q st
 sbatch -A bera89 -N1 -n1 --cpus-per-task=32 --gpus-per-node=1 -p a100-80gb --constraint=K --mem=80G --time=7-00:00:00 /XXX.sub
 #!/bin/sh -l
 scp -r breaking_bad.hdf5 Some user folder
+cp for local network/disk
 
 squeue -u zhan5058
 scancel #jobid
